@@ -16,7 +16,7 @@ function menuOptions() {
         alert("Quitting program.");
         break;
       case "W":
-        let withdrawAmount = parseFloat(prompt("Enter amount to withdraw:"));
+        const withdrawAmount = Number(prompt("Enter amount to withdraw:"));
         if (isNaN(withdrawAmount) || withdrawAmount <= 0) {
           alert("Invalid withdrawal amount.");
         } else if (withdrawAmount > balance) {
@@ -27,7 +27,7 @@ function menuOptions() {
         }
         break;
       case "D":
-        let depositAmount = parseFloat(prompt("Enter amount to deposit:"));
+        const depositAmount = Number(prompt("Enter amount to deposit:"));
         if (isNaN(depositAmount) || depositAmount <= 0) {
           alert("Invalid deposit amount.");
         } else if (depositAmount > 50000) {
