@@ -1,0 +1,58 @@
+@import "variables";
+@import "responsive";
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $fontfamily;
+  color: $gunmetal;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: 2rem solid $lightgray;
+  width: 50%;
+}
+
+.img-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 1rem;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 0.5rem;
+  margin: 1rem;
+  background-color: $platinum;
+  width: 60%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 1rem;
+  li {
+    padding: 0.5rem;
+  }
+  li i {
+    padding: 0.5rem;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.fa-linkedin {
+  color: $linkedinblue;
+  font-size: 1.5rem;
+}
