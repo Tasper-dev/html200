@@ -1,10 +1,16 @@
 @import "variables";
-@import "responsive";
+
 * {
   margin: 0;
   padding: 0;
   font-family: $fontfamily;
   color: $gunmetal;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -12,7 +18,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   border: 2rem solid $lightgray;
-  width: 50%;
+  width: 100%;
 }
 
 .img-box {
@@ -20,6 +26,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 1rem;
+  align-items: center;
 }
 
 .info-box {
@@ -29,7 +36,7 @@
   padding: 0.5rem;
   margin: 1rem;
   background-color: $platinum;
-  width: 60%;
+  width: 100%;
 }
 
 ul {
@@ -37,6 +44,9 @@ ul {
   padding: 1rem;
   li {
     padding: 0.5rem;
+    &:hover {
+      color: $linkedinblue;
+    }
   }
   li i {
     padding: 0.5rem;
@@ -56,3 +66,4 @@ h2 {
   color: $linkedinblue;
   font-size: 1.5rem;
 }
+@import "responsive";

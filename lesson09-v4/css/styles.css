@@ -3,6 +3,12 @@
   padding: 0;
   font-family: arial, Helvetica, sans-serif;
   color: #818589;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .container {
@@ -10,7 +16,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   border: 2rem solid #d3d3d3;
-  width: 50%;
+  width: 100%;
 }
 
 .img-box {
@@ -18,6 +24,7 @@
   flex-direction: column;
   flex-wrap: nowrap;
   padding: 1rem;
+  align-items: center;
 }
 
 .info-box {
@@ -27,7 +34,7 @@
   padding: 0.5rem;
   margin: 1rem;
   background-color: #e5e4e2;
-  width: 60%;
+  width: 100%;
 }
 
 ul {
@@ -36,6 +43,9 @@ ul {
 }
 ul li {
   padding: 0.5rem;
+}
+ul li:hover {
+  color: #0072b1;
 }
 ul li i {
   padding: 0.5rem;
@@ -53,4 +63,16 @@ h2 {
 .fa-linkedin {
   color: #0072b1;
   font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .info-box {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 80%;
+    margin: auto;
+  }
 }
